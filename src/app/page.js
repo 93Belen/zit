@@ -5,7 +5,7 @@ import styles from './page.module.css'
 import { Modal, ModalHeader } from 'react-bootstrap'
 import { useState } from 'react'
 import { CardComponent } from 'components/components/card'
-
+import 'bootstrap/dist/css/bootstrap.min.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
         {logo}
         <p onClick={openLoginModal}>Log-in</p>
       </header>
-    <main className={styles.main}>
+    <main className='main'>
     <Modal centered={true} show={view} onHide={closeLoginModal}>
       <ModalHeader closeButton></ModalHeader>
       <p>Login modal</p>
