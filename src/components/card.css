@@ -21,8 +21,8 @@
     border-radius: 20px;
     padding: 4%;
     display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 5% 5% 5% 75% 10%;
+    grid-template-columns: 90% 10%;
+    grid-template-rows: repeat(7, 1fr);
     column-gap: 3%;
     row-gap: 1%;
     min-height: fit-content;

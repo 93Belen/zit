@@ -38,8 +38,9 @@ export const CardComponent = () => {
                     </Container>
                 </Card>
                 <Card id='contact-card' >
-                    <h1>Contact</h1>   
-                    <CloseButton onClick={flipBack} />          
+                    <h1>Contact Name Sur.</h1>   
+                    <CloseButton onClick={flipBack} />
+                             
                 </Card>
             </Container>
         </Container>
