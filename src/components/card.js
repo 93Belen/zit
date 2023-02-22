@@ -1,5 +1,5 @@
 import pic from '../../imgs/pic.jpg';
-import { Card, Button, Row, Col, Container } from "react-bootstrap";
+import { Card, Button, Row, Col, Container, CloseButton } from "react-bootstrap";
 import Image from 'next/image';
 import { empty, full } from './stars';
 import './card.css';
@@ -38,8 +38,8 @@ export const CardComponent = () => {
                     </Container>
                 </Card>
                 <Card id='contact-card' >
-                    <Button onClick={flipBack}>Close</Button>
-                    <h1>Contact</h1>               
+                    <h1>Contact</h1>   
+                    <CloseButton onClick={flipBack} />          
                 </Card>
             </Container>
         </Container>
