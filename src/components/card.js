@@ -11,6 +11,9 @@ export const CardComponent = () => {
     const flip = () => {
         document.getElementById('the-card').style.transform = 'rotateY(180deg)';
     }
+    const flipBack = () => {
+        document.getElementById('the-card').style.transform = '';
+    }
 
 
     return (
@@ -35,6 +38,7 @@ export const CardComponent = () => {
                     </Container>
                 </Card>
                 <Card id='contact-card' >
+                    <Button onClick={flipBack}>Close</Button>
                     <h1>Contact</h1>               
                 </Card>
             </Container>
