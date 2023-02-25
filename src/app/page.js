@@ -1,12 +1,10 @@
 "use client"
-import { Inter } from '@next/font/google'
 import { logo } from 'components/components/logo'
 import styles from './page.module.css'
-import { Modal, ModalHeader } from 'react-bootstrap'
+import { FloatingLabel, Button, Form, FormControl, FormGroup, Modal, ModalBody, ModalHeader } from 'react-bootstrap'
 import { useState } from 'react'
 import { CardComponent } from 'components/components/card'
 import 'bootstrap/dist/css/bootstrap.min.css'
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const [view, setView] = useState(false);
@@ -19,9 +17,24 @@ export default function Home() {
         <p onClick={openLoginModal}>Log-in</p>
       </header>
     <main className='main'>
-    <Modal centered={true} show={view} onHide={closeLoginModal}>
+    <Modal id='login-modal' centered={true} show={view} onHide={closeLoginModal}>
       <ModalHeader closeButton></ModalHeader>
-      <p>Login modal</p>
+      <ModalBody>
+      <h2 id='h2-login'>Log-in</h2>
+      <Form>
+        <FormGroup className='mt-4'>
+        <FloatingLabel  label='email'>
+          <FormControl placeholder='email' />
+        </FloatingLabel>
+        </FormGroup>
+        <FormGroup className='mt-3 mb-4'>
+        <FloatingLabel  label='password'>
+          <FormControl placeholder='password' />
+        </FloatingLabel>
+        </FormGroup>
+        <Button variant='success'>Log-in</Button>
+      </Form>
+      </ModalBody>
     </Modal>
     <CardComponent />
     </main>

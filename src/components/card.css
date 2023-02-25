@@ -1,14 +1,15 @@
 #profile-card {
     box-sizing: border-box;
     width: 93vw;
+    height: 600px;
     border: solid 5px #87C159;
     border-radius: 20px;
     padding: 4%;
     display: grid;
     grid-template-columns: 60% 40%;
-    grid-template-rows: 5% 5% 5% 75% 10%;
+    grid-template-rows: 5% 5% 5% 63% 10%;
     column-gap: 3%;
-    row-gap: 1%;
+    row-gap: 3%;
     min-height: fit-content;
     position: absolute;
     backface-visibility: hidden;
@@ -16,7 +17,7 @@
 #contact-card {
     box-sizing: border-box;
     width: 93vw;
-    height: 500px;
+    height: 600px;
     border: solid 5px #87C159;
     border-radius: 20px;
     padding: 4%;
@@ -49,6 +50,8 @@
     width: 100%;
     height: 100%;
     font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-top: 5%;
 }
 #profile-card .age{
     grid-row: 2;
@@ -69,6 +72,7 @@
 
 .buttons-div {
     width: 100%;
+    margin-top: 0;
     grid-column: span 2;
 }
 .buttons-div .row {
@@ -79,16 +83,20 @@
 #container {
     position: relative;
     width: 90vw;
-    height: fit-content;
+    height: 600px;
     margin: 0;
     padding: 0;
 }
 #the-card {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 700px;
     transform-style: preserve-3d;
     transition: all 0.5s ease;
     margin: 0;
     padding: 0;
+}
+
+#contact-card p {
+    grid-column: span 2;
 }
