@@ -5,6 +5,7 @@ import { FloatingLabel, Button, Form, FormControl, FormGroup, Modal, ModalBody, 
 import { useState } from 'react'
 import { CardComponent } from 'components/components/card'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Link from 'next/link'
 
 export default function Home() {
   const [view, setView] = useState(false);
@@ -34,6 +35,7 @@ export default function Home() {
         </FormGroup>
         <Button variant='success'>Log-in</Button>
       </Form>
+      <Link onClick={closeLoginModal} href='/signup'>Sign-up</Link>
       </ModalBody>
     </Modal>
     <CardComponent />
