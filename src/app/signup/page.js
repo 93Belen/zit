@@ -1,18 +1,16 @@
 "use client"
 import { logo } from 'components/components/logo'
-import styles from '../page.module.css'
 import { FloatingLabel, Button, Form, FormControl, FormGroup, FormCheck } from 'react-bootstrap'
-import { useState } from 'react'
-import { CardComponent } from 'components/components/card'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Link from 'next/link'
+import { ImArrowLeft  } from 'react-icons/im';
 
 export default function Signup() {
     return (
     <>
     <header>
         {logo}
-        <Link href='/'>Go back</Link>
+        <Link className='a' href='/'><ImArrowLeft/></Link>
       </header>
     <main className='main'>
       <Form>

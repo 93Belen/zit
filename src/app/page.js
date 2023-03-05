@@ -1,6 +1,5 @@
 "use client"
-import { logo } from 'components/components/logo'
-import styles from './page.module.css'
+import { logo } from 'components/components/logo';
 import { FloatingLabel, Button, Form, FormControl, FormGroup, Modal, ModalBody, ModalHeader } from 'react-bootstrap'
 import { useState } from 'react'
 import { CardComponent } from 'components/components/card'
@@ -35,7 +34,7 @@ export default function Home() {
         </FormGroup>
         <Button variant='success'>Log-in</Button>
       </Form>
-      <Link onClick={closeLoginModal} href='/signup'>Sign-up</Link>
+      <Link className='a' onClick={closeLoginModal} href='/signup'>Sign-up</Link>
       </ModalBody>
     </Modal>
     <CardComponent />
