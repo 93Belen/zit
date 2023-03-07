@@ -38,3 +38,7 @@ p{
     height: auto;
     fill: green;
 }
+.taskCard {
+    padding: 5%;
+    height: 150px;
+}
